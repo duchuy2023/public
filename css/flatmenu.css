@@ -1,25 +1,27 @@
+
 @font-face {
   font-family: 'Vietnam Pro';
   font-weight: 400;
-  src: url('BeVietnamPro-Regular.ttf');
+  src: url('https://cdn.jsdelivr.net/gh/duchuy2023/public@main/BeVietnamPro-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Vietnam Pro';
   font-weight: 500;
-  src: url('BeVietnamPro-SemiBold.ttf');
+  src: url('https://cdn.jsdelivr.net/gh/duchuy2023/public@main/BeVietnamPro-SemiBold.ttf');
 }
 
 @font-face {
   font-family: 'Vietnam Pro';
   font-weight: 700;
-  src: url('BeVietnamPro-Bold.ttf');
+  src: url('https://cdn.jsdelivr.net/gh/duchuy2023/public@main/BeVietnamPro-Bold.ttf');
 }
+
 html { 
 	-webkit-text-size-adjust: 100%; 
 	-ms-text-size-adjust: 100%; 
 }
-
+a{text-decoration: none;}
 
 html, body{ 
 	margin: 0; 
@@ -31,7 +33,6 @@ html, body{
     font-size: 16px;
 }
 
-.container { }
 .clear:before,.clear:after{content:'';display:table; }
 .clear:after{clear:both;}
 .clear{zoom:1;}
@@ -40,16 +41,11 @@ html, body{
 --------------------------------------------- */
 
 .nav{ 
-
 	position:relative; 
 	z-index:999;
-	font-family: Vietnam Pro;
-    font-size: 16px !important;
-    font-weight: 500 !important;
-    cursor: pointer;
+  font-weight: 500 !important;
+  cursor: pointer;
 }
-
-
 .nav ul, 
 .nav ol, 
 .nav dl, 
@@ -157,22 +153,22 @@ ul.dropdown ul ul { top:0; left:100%; }
 ---------------------------------------- */	
 ul.dropdown *.sub { 
 	padding-right:15px; 
-	background-image: url(../images/nav-arrow-down-thin.gif); 
+	background-image: url(https://cdn.jsdelivr.net/gh/duchuy2023/public@main/nav-arrow-down-thin.gif); 
 	background-position: 95% 50%; 
 	background-repeat: no-repeat; 
 }
 
 ul.dropdown ul *.sub { 
 	padding-right: 15px; 
-	background-image: url(../images/nav-arrow-right-thin.gif);
+	background-image: url(https://cdn.jsdelivr.net/gh/duchuy2023/public@main/nav-arrow-right-thin.gif);
 	background-position: 100% 50%; 									  
 	background-repeat: no-repeat; 
 }
 
 /* Change trailing arrows on :hover IE7+
 --------------------------------------------------------- */
-ul.dropdown li.sub:hover{  background-image: url(../images/nav-arrow-down.gif); } 
-ul.dropdown ul li.sub:hover{ background-image: url(../images/nav-arrow-right.gif);  }
+ul.dropdown li.sub:hover{  background-image: url(https://cdn.jsdelivr.net/gh/duchuy2023/public@main/nav-arrow-down.gif); } 
+ul.dropdown ul li.sub:hover{ background-image: url(https://cdn.jsdelivr.net/gh/duchuy2023/public@main/nav-arrow-right.gif);  }
 
 /* Main menu seperator 
 ---------------------------------------------- */																		  								  
@@ -212,16 +208,10 @@ ul.dropdown li.ltr ul, ul.dropdown li.ltr ul ul { top:0; left:100%!important; ri
 .green-black ul.dropdown ul li:hover { background-color:#55c57a;  color: #fff; }
 .green-black ul.dropdown ul li a:hover { color: #fff; }
 .green-black ul.dropdown li.divider{ background:#dee2e6;}
-
-
 /* Responsiveness 
 ------------------------------------- */
-
 /* All device screens < = 768px */
 @media screen and (max-width: 768px) {
-
-/* Responsive menu trigger 
------------------------------------- */
 .menu-icon, 
 .menu-icon span, 
 .menu-icon { 
@@ -236,13 +226,12 @@ ul.dropdown li.ltr ul, ul.dropdown li.ltr ul ul { top:0; left:100%!important; ri
 	display:block;
 	position:relative;	
 }
-
 .menu-icon span{ 
 	width: auto;
 	padding:0 15px;
 	padding-left:40px; 
 	height:40px; 
-	background:#10886f url(../images/nav-toggle.png) center no-repeat ; 
+	background:#10886f url(https://cdn.jsdelivr.net/gh/duchuy2023/public@main/nav-toggle.png) center no-repeat ; 
 	color:#FFFFFF;
 	text-align: center;
 	text-indent:-999em; 
@@ -250,27 +239,27 @@ ul.dropdown li.ltr ul, ul.dropdown li.ltr ul ul { top:0; left:100%!important; ri
 	position:absolute;
 	top:5px;
 	right:5px;
-	 
 }
-
-/* Style these as desired 
- * - colors, bgclors etc 
-------------------------------- */
 .menu-icon:hover { }
 .menu-icon:hover span{ }
 .menu-icon.active { }
 .menu-icon.active span{ }
-
-
-/* Responsive menu styling  
---------------------------------- */
-.nav{ position:relative;  }
+html, body{ 
+    font-size: 18px;
+}
+div#logo-pc{
+    display: none;
+}
+.btn-user{
+	margin-top: 15px;
+}
+.nav{ position:relative;  padding-top: 10px;padding-bottom: 10px;}
 .nav,
 ul.dropdown, 
 .menu-icon, 
 .menu-icon span, 
 ul.dropdown *{ box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; } 	
-ul.dropdown{  display:none; position: relative; top:-1px; border-top:1px solid #dee2e6; }
+ul.dropdown{  display:none; position: relative; top:-1px; border-top:1px solid #dee2e6;margin-top: 15px;}
 ul.dropdown  li { position:relative; float:none; display:block; border-bottom:1px solid #dee2e6;}
 ul.dropdown  li li{ border-top:0;}
 ul.dropdown  ul a{ padding-left:25px; }
@@ -294,17 +283,149 @@ ul.dropdown li.rtl ul ul { position:static; }
 ul.dropdown li.divider{ display:none!important; }
 
 }
-
 /* All device screens >  768px */
 @media screen and (min-width: 769px) {
-	/* Avoid responsive menu hiding on browser window resize 
-	-------------------------------------------------------------- */
-	ul.dropdown{ display:block !important ; }
-	 
+	ul.dropdown{ display:block !important ; }	 
+}
+#user {
+	text-align: center;
+}
+.btn-user {
+   white-space: inherit;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    width: 140px;
+    border-radius: 100px;
+}
+
+.btn-user-dangnhap{
+	  background-color: #65b446;
+    color: #fff;
+    border-bottom: 4px solid #4d9830;
+    border-right: 2px solid #4d9830;
+}
+.btn-user-dangnhap:hover {
+    color: #4d9830;
+    background-color: transparent;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    border: 1px solid #4d9830;
+}
+.btn-user-dangky {
+    background-color: #fff;
+    color: #2e3a59;
+    border: 1px solid #c5cee0;
+    border-bottom: 4px solid #c5cee0;
+    border-right: 2px solid #c5cee0;
+ 
+}
+.btn-user-dangky:hover {
+    color: inherit;
+    background-color: transparent;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    border: 1px solid #2e3a59;
+}
+.form-control{
+	border: 1px solid #ddd !important;
+    background-color: #fff !important;
+}
+.form-control:focus {
+	outline: 0;
+	box-shadow: none;
+	border-bottom: 1px solid #ddd; -webkit-box-shadow: 0 1px 0 0 #87e263; box-shadow: 0 1px 0 0 #87e263; 
+}
+#timkiem {
+	position: relative;
+}
+#timkiem>i {
+	  position: absolute;
+    font-size: 20px;
+    color: #2e3a59;
+    top: 8px;
+    right: 30px;
+}
+.huongdan {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 12px;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    margin-top: 15px;
+}
+.huongdan:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.08),0 4px 8px rgba(0,0,0,.04)
+}
+.zalo {
+	background-color: #eff6ff;
+    border-color: #bfdbfe;
+}
+.login-user {
+  background-color: #fefce8;
+    border-color: #fde68a;
+}
+.payment {
+	background-color: #f5f3ff;
+    border-color: #ddd6fe;
+}
+.huongdan span img {
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	margin-right: 15px;
+}
+.nd-huongdan h2 {
+    font-weight: 600;
+    color: #1f2937;
+    font-size: 16px;
+    margin: 0;
+}
+.nd-huongdan p {
+    color: #6b7280;
+    font-size: 16px;
+    margin: 0;
+}
+.zalo i {
+    color: #60a5fa;
+}
+.zalo span img{
+		border: 2px solid #00339954 !important;
+}
+.login-user i {
+    color: #facc15;
+}
+.login-user span img{
+	border: 2px solid #fde68a !important;
+}
+.payment i {
+    color: #a78bfa;
+}
+.payment span img{
+		border: 2px solid #ab90fa !important;
+}
+.huongdan i {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
 }
 footer {
     background: #55c57a;
     color: #fff;
 }
 
+
+.my-list .list-group-item {
+  border-bottom: 1px dashed #eee;
+}
+
+.my-list .list-group-item:last-child ,.my-list .list-group-item:first-child  {
+  border-bottom: 1px solid #dee2e6;
+}
 

@@ -1,0 +1,324 @@
+.green-black ul.dropdown a:hover {
+    color: #red;
+}
+/*
+--------------------------------------------------------------
+Product Name: Golden - Responsive Flat Dropdown Menu
+Product Version: 1.0
+Author: Igga Elia (elflaire)
+Author URL: http://doptiq.com 
+Author Portifolio: http://codecanyon.net/user/elflaire/portfolio 
+E-mail: hello@doptiq.com 
+Updates: Initial Release - 28th/Aug/2013
+-------------------------------------------------------------- */
+
+/* Resets for Demo 
+------------------------------------------------- */
+@font-face {
+  font-family: 'Vietnam Pro';
+  font-weight: 400;
+  src: url('BeVietnamPro-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Vietnam Pro';
+  font-weight: 500;
+  src: url('BeVietnamPro-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Vietnam Pro';
+  font-weight: 700;
+  src: url('BeVietnamPro-Bold.ttf');
+}
+html { 
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%; 
+}
+
+
+html, body{ 
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	font-size: 100%; 
+	vertical-align: baseline;
+	font-family: Vietnam Pro;
+    font-size: 16px !important;
+}
+
+.container { }
+.clear:before,.clear:after{content:'';display:table; }
+.clear:after{clear:both;}
+.clear{zoom:1;}
+
+/* Start Menu Styling 
+--------------------------------------------- */
+
+.nav{ 
+
+	position:relative; 
+	z-index:999;
+	font-family: Vietnam Pro;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    cursor: pointer;
+}
+
+
+.nav ul, 
+.nav ol, 
+.nav dl, 
+.nav li { 
+	line-height:1.5em;
+	list-style:none; 
+}
+
+/* Hide responsive menu trigger 
+--------------------------------------------- */
+.menu-icon { display:none; }
+
+/* Start dropdown menu styling 
+--------------------------------------------- */
+ul.dropdown,
+ul.dropdown li,
+ul.dropdown ul { 
+	margin: 0; 
+	padding: 0; 
+	
+}
+
+ul.dropdown{
+	float:left;
+	width:100%; 
+	position: relative; 
+}
+
+ul.dropdown li { 
+	float: left; 
+	vertical-align: middle; 
+	zoom: 1; /* IE6 */
+}
+
+/* General list styling 
+-------------------------------------------- */
+ul.dropdown li {  
+	font-size:16px; 
+	font-weight: 500;
+	/*text-transform:uppercase; */
+}
+
+/* General links styling 
+-------------------------------------------- */
+ul.dropdown a,
+ul.dropdown a:visited,	
+ul.dropdown a:hover, 		
+ul.dropdown a:active { 
+	text-decoration: none; 
+}
+
+ul.dropdown a, 
+ul.dropdown span { 
+	display: block;
+	outline:none; 
+	cursor:pointer; 
+	padding:13px 15px; 
+}
+
+ul.dropdown ul a,
+ul.dropdown ul span {  
+	padding:12px 15px; 
+}	
+
+ul.dropdown li:hover, 
+ul.dropdown li.hover { 
+	position: relative; 
+	cursor:pointer; 
+}
+
+/* Level I+ 
+--------------------------------------- */
+ul.dropdown ul { 
+	display:none; 
+	position: absolute;
+	z-index: 598;
+	width: 220px; 
+	top: 100%; 
+	left: 0; 
+}
+
+ 
+ul.dropdown li:hover > ul{ 
+	display:block;
+}
+
+ul.dropdown ul li { 
+	float: none;
+	font-size:16px;
+	font-weight: normal; 
+	text-transform:none;
+	position:relative; 
+}
+
+ul.dropdown ul li.hover, 
+ul.dropdown ul li:hover { /* background-color:#1ABC9C; color: #fff; */ }
+ul.dropdown ul li a:hover { /* color: #fff; */ }
+	
+/* Level II +  
+---------------------------------------- */
+ul.dropdown ul ul { top:0; left:100%; }
+
+
+/* Add trailing arrows 
+---------------------------------------- */	
+ul.dropdown *.sub { 
+	padding-right:15px; 
+	background-image: url(../images/nav-arrow-down-thin.gif); 
+	background-position: 95% 50%; 
+	background-repeat: no-repeat; 
+}
+
+ul.dropdown ul *.sub { 
+	padding-right: 15px; 
+	background-image: url(../images/nav-arrow-right-thin.gif);
+	background-position: 100% 50%; 									  
+	background-repeat: no-repeat; 
+}
+
+/* Change trailing arrows on :hover IE7+
+--------------------------------------------------------- */
+ul.dropdown li.sub:hover{  background-image: url(../images/nav-arrow-down.gif); } 
+ul.dropdown ul li.sub:hover{ background-image: url(../images/nav-arrow-right.gif);  }
+
+/* Main menu seperator 
+---------------------------------------------- */																		  								  
+ul.dropdown li.divider{ 
+	padding:0!important; 
+	margin:0!important; 
+	border:0!important;
+	display:block; 
+	height:49px; 
+	float:left;
+	width:1px; 
+}
+
+ul.dropdown li.rtl ul { position: absolute; top: 100%; right:0; z-index: 598; left:auto; }
+ul.dropdown li.rtl ul ul { top:0; right:100%; left:auto; }
+ul.dropdown li.ltr ul, ul.dropdown li.ltr ul ul { top:0; left:100%!important; right:auto!important; }
+
+/* Theme settings - Change your menu colors, bgcolors, border-colors
+---------------------------------------------------------------------- */
+
+/* Theme green black */
+.green-black, 
+.green-black ul.dropdown { background:#55c57a; }
+.green-black ul.dropdown ul { background:#10886f; } 
+
+.green-black ul.dropdown a,
+.green-black ul.dropdown a:visited,	
+.green-black ul.dropdown a:hover, 		
+.green-black ul.dropdown a:active, 
+.green-black ul.dropdown li  { color: #fff; }
+
+.green-black ul.dropdown li:hover, 
+.green-black ul.dropdown li.hover {  background-color:#10886f; color: #fff; }
+.green-black ul.dropdown ul li {   border-bottom:1px solid #dee2e6;}
+
+.green-black ul.dropdown ul li.hover, 
+.green-black ul.dropdown ul li:hover { background-color:#55c57a;  color: #fff; }
+.green-black ul.dropdown ul li a:hover { color: #fff; }
+.green-black ul.dropdown li.divider{ background:#dee2e6;}
+
+
+/* Responsiveness 
+------------------------------------- */
+
+/* All device screens < = 768px */
+@media screen and (max-width: 768px) {
+
+/* Responsive menu trigger 
+------------------------------------ */
+.menu-icon, 
+.menu-icon span, 
+.menu-icon { 
+	color: #fff; 
+	width:100%; 
+	height:50px; 
+	line-height:40px; 
+	padding:5px; 
+	font-size:1.3em; 
+	font-weight:bold; 
+	cursor: pointer; 
+	display:block;
+	position:relative;	
+}
+
+.menu-icon span{ 
+	width: auto;
+	padding:0 15px;
+	padding-left:40px; 
+	height:40px; 
+	background:#10886f url(../images/nav-toggle.png) center no-repeat ; 
+	color:#FFFFFF;
+	text-align: center;
+	text-indent:-999em; 
+	display: inline-block;
+	position:absolute;
+	top:5px;
+	right:5px;
+	 
+}
+
+/* Style these as desired 
+ * - colors, bgclors etc 
+------------------------------- */
+.menu-icon:hover { }
+.menu-icon:hover span{ }
+.menu-icon.active { }
+.menu-icon.active span{ }
+
+
+/* Responsive menu styling  
+--------------------------------- */
+.nav{ position:relative;  }
+.nav,
+ul.dropdown, 
+.menu-icon, 
+.menu-icon span, 
+ul.dropdown *{ box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; } 	
+ul.dropdown{  display:none; position: relative; top:-1px; border-top:1px solid #dee2e6; }
+ul.dropdown  li { position:relative; float:none; display:block; border-bottom:1px solid #dee2e6;}
+ul.dropdown  li li{ border-top:0;}
+ul.dropdown  ul a{ padding-left:25px; }
+ul.dropdown  ul ul a{ padding-left:45px; }
+ul.dropdown  ul a:hover  { background-color:#67de8e;}
+ul.dropdown  li.sub ul > li{ /*border-top:1px solid;*/ }
+ul.dropdown *.sub { padding:0!important; background-image: none!important; }
+ul.dropdown ul{ overflow: hidden; max-height: 0; width:auto; display:block; position: static; }
+ul.dropdown ul.current { display:block; max-height:100em; }
+ul.dropdown li.sub > a{ padding-right:25px; }
+ul.dropdown li.sub > a.current{ background:#16A085;  }
+ul.dropdown li.sub > ul a.current{ background:#55c57a; }
+ul.dropdown li.sub > a:after, 
+ul.dropdown li.sub > a.current:after { position: absolute; top: 0; right: 0; display: block; font-size: 1.5em; padding: 0.55em 0.5em; }
+ul.dropdown li.sub > a:after { content: '\002B'; }	
+ul.dropdown li.sub > a.current:after { content: "\2013"; top:-2px; }	
+ul.dropdown li.rtl ul, 
+ul.dropdown li.ltr ul, 
+ul.dropdown li.ltr ul ul, 
+ul.dropdown li.rtl ul ul { position:static; }
+ul.dropdown li.divider{ display:none!important; }
+
+}
+
+/* All device screens >  768px */
+@media screen and (min-width: 769px) {
+	/* Avoid responsive menu hiding on browser window resize 
+	-------------------------------------------------------------- */
+	ul.dropdown{ display:block !important ; }
+	 
+}
+footer {
+    background: #55c57a;
+    color: #fff;
+}

@@ -1,16 +1,3 @@
-/*
---------------------------------------------------------------
-Product Name: Golden - Responsive Flat Dropdown Menu
-Product Version: 1.0
-Author: Igga Elia (elflaire)
-Author URL: http://doptiq.com 
-Author Portifolio: http://codecanyon.net/user/elflaire/portfolio 
-E-mail: hello@doptiq.com 
-Updates: Initial Release - 28th/Aug/2013
--------------------------------------------------------------- */
-
-/* Resets for Demo 
-------------------------------------------------- */
 @font-face {
   font-family: 'Vietnam Pro';
   font-weight: 400;
@@ -41,7 +28,7 @@ html, body{
 	font-size: 100%; 
 	vertical-align: baseline;
 	font-family: Vietnam Pro;
-    font-size: 16px !important;
+    font-size: 16px;
 }
 
 .container { }
@@ -319,4 +306,5 @@ footer {
     background: #55c57a;
     color: #fff;
 }
+
 

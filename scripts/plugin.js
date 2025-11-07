@@ -90,4 +90,13 @@ $(document).ready(function(){
 
 });	
 /* ======END TODAY  ====== */
+/* ======LOADING  ====== */
+window.addEventListener("load", function(){
+  setTimeout(function(){
+    const p = document.getElementById("preloader");
+    p.style.opacity = "0";
+    setTimeout(() => p.style.display = "none", 400);
+  }, 1000); 
+});
+/* ======END LOADING   ====== */
 

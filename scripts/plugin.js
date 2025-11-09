@@ -54,7 +54,7 @@ var mainAudio = new Audio();
 /* ======MENU ====== */
 $(function() {		   
 	// main menu toggler
-	$('.nav .container').prepend('<div class="menu-icon"><a class="navbar-brand" href="#"><img src="https://cdn.jsdelivr.net/gh/duchuy2023/public@main/logom.png" alt="Hoang Dien Logo" height="40"></a><span>Menu</span></div>');
+	$('.nav .container').prepend('<div class="menu-icon"><a class="navbar-brand" expr:href='data:blog.homepageUrl'><img src="https://cdn.jsdelivr.net/gh/duchuy2023/public@main/logom.png" alt="Hoang Dien Logo" height="40"></a><span>Menu</span></div>');
 	$('.menu-icon').click(function(){						
 		$('ul.dropdown').slideToggle(600);
 		$(this).toggleClass("active");	
